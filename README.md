@@ -8,13 +8,13 @@ Hugging Face에서 제공하는 사전학습 모델을 사용하고, Streamlit�
 ## 📌 프로젝트 개요
 
 - **프로젝트명**: Deepfake Detection Web Service
-- **목표**: 이미지 또는 영상이 딥페이크인지 실시간으로 판별하는 AI 기반 웹 애플리케이션 구축
+- **목표**: 이미지가 딥페이크로 만든 이미지인지 판별하는 웹 애플리케이션 구축
 - **기술 스택**:  
   - AI Framework: `PyTorch`, `Transformers`
   - Backend API: `FastAPI`
   - Web UI: `Streamlit`
   - Storage: `Naver Object Storage`
-  - Database: `Naver Cloud DB (MySQL 등)`
+  - Database: `Naver Cloud DB (MySQL)`
   - Infra: `Naver Cloud High CPU 인스턴스`
 
 ---
@@ -24,7 +24,7 @@ Hugging Face에서 제공하는 사전학습 모델을 사용하고, Streamlit�
 ### 1. 🧠 AI/모델 서빙
 
 - **딥러닝 프레임워크**: PyTorch 기반
-- **모델**: Hugging Face `prithivMLmods/Deep-Fake-Detector-v2-Model`  
+- **모델**: Hugging Face ``  
 - **서빙 방식**: FastAPI 기반 RESTful API  
 - **모델 처리 흐름**:  
   - 이미지 입력 → 전처리 → 모델 추론 → 딥페이크 여부 결과 반환
@@ -49,7 +49,7 @@ Hugging Face에서 제공하는 사전학습 모델을 사용하고, Streamlit�
 - **Naver Object Storage**:
   - 사용자 업로드 이미지 저장소
   - Streamlit에서 접근 가능
-- **Cloud DB (MySQL 등)**:
+- **Cloud DB (MySQL)**:
   - 사용자 요청 기록 저장
   - 예측 결과 저장
   - 향후 통계/로그 기능 확장 가능
