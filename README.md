@@ -1,6 +1,6 @@
 # 🧠 Deepfake Detection Web Service
 
-AI 기반의 딥페이크 탐지 모델을 활용하여 웹에서 실시간으로 이미지를 분석하고 딥페이크 여부를 판별하는 서비스입니다.  
+AI 기반의 딥페이크 탐지 모델을 활용하여 웹에서 이미지를 분석하고 딥페이크 여부를 판별하는 서비스입니다.  
 Hugging Face에서 제공하는 사전학습 모델을 사용하고, Streamlit을 통해 직관적인 웹 인터페이스를 제공합니다.
 
 ---
@@ -62,7 +62,7 @@ Hugging Face에서 제공하는 사전학습 모델을 사용하고, Streamlit�
 |------|-----------|
 | 1 | Streamlit 기반 사용자 인터페이스(UI) 개발 |
 | 2 | Naver Object Storage 연동 구현 |
-| 3 | Hugging Face 모델 다운로드 및 API화 |
+| 3 | Hugging Face 모델 다운로드 |
 | 4 | FastAPI를 이용한 RESTful API 서버 구축 |
 | 5 | CPU 환경에 맞춘 모델 최적화 |
 | 6 | 결과 저장용 데이터베이스 설계 및 연동 |
@@ -97,10 +97,4 @@ Hugging Face에서 제공하는 사전학습 모델을 사용하고, Streamlit�
 ## 🧪 프로젝트 실행 방법
 
 ### 1. 서버 및 환경 설정
-```bash
-# 가상환경 생성 및 활성화
-python -m venv app_env
-source app_env/bin/activate
 
-# 필요한 패키지 설치
-pip install -r requirements.txt
